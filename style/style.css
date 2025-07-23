@@ -1,0 +1,55 @@
+/* Base reset */
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Google font */
+
+body {
+  font-family: "Noto Serif", serif;
+}
+
+/* Shared class */
+
+.container {
+  max-width: 1140px;
+}
+
+/* Navbar style */
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+  gap: 48px;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(137, 135, 161);
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.span-1 {
+  color: rgb(37, 36, 50);
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* Responsive media query */
+
+@media (max-width: 768px) {
+  li,
+  a {
+    display: none;
+  }
+}
