@@ -327,6 +327,47 @@ input {
   gap: 0;
   margin-left: -8px;
 }
+.email-mobile {
+  display: flex;
+}
+
+/* Footer section styles */
+
+.footer-container {
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+  text-align: center;
+  gap: 110px;
+}
+.footer-2 {
+  display: flex;
+  gap: 110px;
+}
+.footer-3 {
+  display: flex;
+  gap: 24px;
+  align-items: start;
+  text-align: center;
+  justify-content: center;
+}
+.footer-description {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Inter;
+  font-size: 1.37rem;
+  font-weight: 400;
+  line-height: 27px;
+  padding-top: 16px;
+}
+.footer-2,
+p {
+  color: rgb(107, 114, 128);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  line-height: 32px;
+}
 
 /* Responsive media query */
 
