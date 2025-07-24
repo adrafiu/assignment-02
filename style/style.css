@@ -87,7 +87,6 @@ body {
   text-align: center;
   padding-top: 120px;
 }
-
 .card-section-title {
   font-size: 3rem;
   font-weight: 700;
@@ -147,6 +146,133 @@ body {
   display: none;
 }
 
+/* Flower/Img-container styles */
+
+.img-container {
+  text-align: center;
+  padding-top: 133px;
+}
+.img-title-description {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Inter;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 27px;
+  padding-top: 16px;
+  padding-bottom: 120px;
+}
+
+.img-container-bottom {
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-position: center;
+}
+.img-container-bottom-left {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-position: center;
+}
+.img-container-image-1 {
+  width: 366.22px;
+  height: 206px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 14px;
+  padding-bottom: 25px;
+}
+.img-container-image-1::before {
+  background-image: url("../assets/deal-bloom.png");
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: blur(1px) brightness(60%);
+  z-index: -1;
+  border-radius: 14px;
+}
+.img-container-image-2 {
+  width: 366.22px;
+  height: 206px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 14px;
+}
+.img-container-image-2::before {
+  background-image: url("../assets/deal-ana.png");
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: blur(1px) brightness(60%);
+  z-index: -1;
+}
+.img-container-image-description-1,
+.img-container-image-description-2 {
+  color: rgb(255, 255, 255);
+  font-family: Noto Serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 27px;
+}
+.img-container-image-description-2 {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  cursor: pointer;
+}
+.span-6 {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  cursor: pointer;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+.img-container-image-description-3 {
+  color: rgb(255, 255, 255);
+  font-family: Noto Serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 27px;
+  line-height: 50px;
+}
+.img-container-image-3 {
+  width: 753px;
+  height: 423.13px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 22px;
+}
+.img-container-image-3::before {
+  background-image: url("../assets/deal-zabo.png");
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: blur(1px) brightness(60%);
+  z-index: -1;
+}
+.img-title-description-mobile {
+  display: none;
+}
+
 /* Responsive media query */
 
 @media (max-width: 640px) {
@@ -155,6 +281,7 @@ body {
     padding: 0;
     box-sizing: border-box;
   } */
+
   .container {
     padding: 0;
   }
@@ -186,7 +313,6 @@ body {
   .card-section-top {
     text-align: center;
   }
-
   .card-section-bottom {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -208,7 +334,6 @@ body {
     padding-top: 16px;
     padding-bottom: 28px;
   }
-
   .card-btn {
     font-size: 65%;
     width: 100%;
@@ -226,6 +351,40 @@ body {
   }
   .card-section-img:nth-child(7n),
   .card-section-img:nth-child(8n) {
+    display: none;
+  }
+  .img-container-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-container-image-1,
+  .img-container-image-2 {
+    width: 366.22px;
+    height: 206px;
+  }
+  .img-container-image-2 {
+    border-radius: 0;
+  }
+  .img-container-image-3 {
+    width: 361px;
+    height: 177px;
+    border-radius: 14px;
+  }
+  .img-container-image-description-3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 27px;
+  }
+  .img-title-description-mobile {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 17px;
+    display: block;
+    padding-bottom: 46px;
+  }
+  .img-title-description {
     display: none;
   }
 }
