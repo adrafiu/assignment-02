@@ -102,7 +102,7 @@ body {
 .card-section-description {
   color: rgba(0, 0, 0, 0.5);
   font-family: Inter;
-  font-size: 22px;
+  font-size: 1.3rem;
   font-weight: 400;
   line-height: 27px;
   padding-top: 16px;
@@ -116,7 +116,6 @@ body {
   line-height: 150%;
   padding-top: 30px;
   padding-bottom: 10px;
-  /* row-gap: 5px */
 }
 .card-img {
   width: 100%;
@@ -134,11 +133,7 @@ body {
   font-size: 90%;
   font-weight: 600;
   padding: 19px 80px;
-  /* display: inline-block; */
-  /* white-space: ; */
-  /* align-items: center; */
   border: none;
-  /* line-height: 19px; */
 }
 .card-section-bottom {
   display: grid;
@@ -148,15 +143,21 @@ body {
 .card-section-description-mobile {
   display: none;
 }
+.hiden {
+  display: none;
+}
 
 /* Responsive media query */
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   /* * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
   } */
+  .container {
+    padding: 0;
+  }
   li,
   a {
     display: none;
@@ -167,7 +168,6 @@ body {
   .banner-section {
     display: flex;
     flex-direction: column-reverse;
-    /* text-align: left; */
     align-items: flex-start;
   }
   .banner-title {
@@ -179,9 +179,9 @@ body {
   .banner-description {
     color: rgba(0, 0, 0, 0.5);
     font-family: Inter;
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 400;
-    /* line-height: 17px; */
+    line-height: 17px;
   }
   .card-section-top {
     text-align: center;
@@ -202,17 +202,30 @@ body {
     display: block;
     color: rgba(0, 0, 0, 0.5);
     font-family: Inter;
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 400;
-    /* line-height: 17px; */
+    line-height: 17px;
     padding-top: 16px;
     padding-bottom: 28px;
   }
-  /* .card-section-img,
-  img {
-    width: 100%;
-  } */
+
   .card-btn {
     font-size: 65%;
+    width: 100%;
+    padding: 19px 30.5px;
+  }
+  .card-section {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-price {
+    font-size: 1rem;
+  }
+  .card-section-img:nth-child(7n),
+  .card-section-img:nth-child(8n) {
+    display: none;
   }
 }
