@@ -20,6 +20,11 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+.container.wide {
+  max-width: 1440px;
+  margin: 0 auto;
+  /* padding: 0 15px; */
+}
 
 /* Navbar styles */
 
@@ -151,6 +156,7 @@ body {
 .img-container {
   text-align: center;
   padding-top: 133px;
+  padding-bottom: 120px;
 }
 .img-title-description {
   color: rgba(0, 0, 0, 0.5);
@@ -273,6 +279,55 @@ body {
   display: none;
 }
 
+/* Email and subscribe section styls */
+
+.email-section {
+  background-image: url("../assets/news-letter-bg.png");
+  width: 100%;
+  height: 533px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  gap: 0;
+}
+.email-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-35%, -35%);
+  text-align: center;
+  gap: 0;
+}
+.email-title {
+  color: rgb(255, 255, 255);
+  font-family: Noto Serif;
+  font-size: 3.125rem;
+  font-weight: 700;
+  line-height: 68px;
+  padding-bottom: 23px;
+  gap: 0;
+}
+.email-container,
+input {
+  padding: 25px 400px 25px 25px;
+  font-size: 1rem;
+  outline: none;
+}
+.search-btn {
+  background: rgb(233, 90, 8);
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 19px;
+  border: none;
+  padding: 25px 53.5px;
+  border-left: none;
+  border-left: none;
+  gap: 0;
+  margin-left: -8px;
+}
+
 /* Responsive media query */
 
 @media (max-width: 640px) {
@@ -386,5 +441,43 @@ body {
   }
   .img-title-description {
     display: none;
+  }
+  .email-section {
+    width: 100%;
+    background-size: 100%;
+    margin-top: -280px;
+  }
+  .email-container {
+    padding: 0;
+    position: 0;
+    margin-left: -40px;
+  }
+  .email-title {
+    padding: 0;
+  }
+  .email-container,
+  input {
+    border: 0;
+    padding: 0;
+  }
+  .email-title {
+    color: rgb(255, 255, 255);
+    font-family: Noto Serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 27px;
+  }
+  .email-container,
+  input {
+    padding: 5px 3px;
+  }
+  .search-btn {
+    padding: 5px 5px;
+  }
+  .email-mobile {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 }
